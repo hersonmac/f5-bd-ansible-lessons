@@ -1,6 +1,6 @@
 ---
 - name: BIG-IP SETUP
-  hosts: lb
+  hosts: plsansible01
   connection: local
   gather_facts: true
 
