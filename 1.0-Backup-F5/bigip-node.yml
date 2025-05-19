@@ -1,6 +1,6 @@
 ---
 - name: BIG-IP SETUP
-  hosts: plsansible01
+  hosts: lb
   connection: local
   gather_facts: true
 
@@ -19,5 +19,5 @@
         src: "{{file_name}}"
         dest: "{{local_folder_location}}/{{file_name}}"
         provider: "{{ provider }}"
-      delegate_to: localhost
+      delegate_to: 10.200.4.99
 
